@@ -47,11 +47,11 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 ## 🚀 Materiais
 
--[Alura](https://cursos.alura.com.br/course/google-cloud-engineer-certificacao-parte1)
--[Coursera](https://www.coursera.org/professional-certificates/cloud-engineering-gcp)
--[FreedCodeCamp](https://www.youtube.com/watch?v=jpno8FSqpc8&t=1435se)
--[Conteúdo da Developer Advocate](https://thecloudgirl.dev/)
--[Vídeos GCP do Google](https://www.youtube.com/user/googlecloudplatform)
--[Livro oficial do Google](https://www.google.com.br/books/edition/Google_Cloud_Certified_Associate_Cloud_E/YcirEAAAQBAJ?hl=pt-BR&gbpv=1&dq=Official+Google+Cloud+Certified+Associate+Cloud+Engineer&printsec=frontcover)
--[ExamsTopics](https://www.examtopics.com/exams/google/associate-cloud-engineer/?source=post_page-----4af23a742b49--------------------------------)
--[Udemy](https://www.udemy.com/course/google-cloud-certification-associate-cloud-engineer/)
+- [Alura](https://cursos.alura.com.br/course/google-cloud-engineer-certificacao-parte1)
+- [Coursera](https://www.coursera.org/professional-certificates/cloud-engineering-gcp)
+- [FreedCodeCamp](https://www.youtube.com/watch?v=jpno8FSqpc8&t=1435se)
+- [Conteúdo da Developer Advocate](https://thecloudgirl.dev/)
+- [Vídeos GCP do Google](https://www.youtube.com/user/googlecloudplatform)
+- [Livro oficial do Google](https://www.google.com.br/books/edition/Google_Cloud_Certified_Associate_Cloud_E/YcirEAAAQBAJ?hl=pt-BR&gbpv=1&dq=Official+Google+Cloud+Certified+Associate+Cloud+Engineer&printsec=frontcover)
+- [ExamsTopics](https://www.examtopics.com/exams/google/associate-cloud-engineer/?source=post_page-----4af23a742b49--------------------------------)
+- [Udemy](https://www.udemy.com/course/google-cloud-certification-associate-cloud-engineer/)
