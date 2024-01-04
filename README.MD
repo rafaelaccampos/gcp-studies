@@ -1,6 +1,6 @@
 <h1 align="center">Cloud Associate Engineer Exam</h1>
 
-## 💻 Project
+## 💻 Projeto
 Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Platform, especialmente sobre a certificação Cloud Associate Engineer.
 
 ## 🧪 Tópicos de estudos
