@@ -6,6 +6,14 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 ## 🧪 Tópicos de estudos
 
 **0 - Fundamentos da Computação em Nuvem**
+O que é computação em nuvem?
+- É a alocação de serviços computacionais para um provedor (como GCP, AWS, Azure e etc), com a capacidade de provisionar agilidade na criação de máquinas, assim como uma arquitetura versionável e escalável. Isso acontece pela APIs de integração que possibilitam a codificação dos recursos para a equipe de infraestrutura.
+Além disso, a computação em nuvem também forneceu a ampliação da capacidade de processamento sem aumentar a complexidade da máquina, pois é possível copiar o sistema para diversas máquinas diferentes, e utilizar um balanceador de carga (load balancer) para gerenciar as requisições que chegam até elas, e com isso o sistema consegue funcionar de forma distribuída.
+
+Modelos de Serviço
+
+Vantagens
+
 
 **1 - Fundamentos do Google Cloud Platform**
 
