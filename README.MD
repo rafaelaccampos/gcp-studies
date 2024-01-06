@@ -5,53 +5,53 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 ## 🧪 Tópicos de estudos
 
-**0 - Fundamentos da Computação em Nuvem**
-O que é computação em nuvem?
-- É a alocação de serviços computacionais para um provedor (como GCP, AWS, Azure e etc), com a capacidade de provisionar agilidade na criação de máquinas, assim como uma arquitetura versionável e escalável. Isso acontece pela APIs de integração que possibilitam a codificação dos recursos para a equipe de infraestrutura.
+### 00 - Fundamentos da Computação em Nuvem
+
+**O que é computação em nuvem?**
+- É a alocação de serviços computacionais para um provedor (como GCP, AWS, Azure e etc), com a capacidade de provisionar agilidade na criação de máquinas, assim como uma arquitetura versionável e escalável. Isso acontece pelas APIs de integração que possibilitam a codificação dos recursos pela equipe de infraestrutura.
 Além disso, a computação em nuvem também forneceu a ampliação da capacidade de processamento sem aumentar a complexidade da máquina, pois é possível copiar o sistema para diversas máquinas diferentes, e utilizar um balanceador de carga (load balancer) para gerenciar as requisições que chegam até elas, e com isso o sistema consegue funcionar de forma distribuída.
 
-Modelos de Serviço
+**Modelos de Serviço**
 
-Vantagens
+**Vantagens**
 
+### 1 - Fundamentos do Google Cloud Platform
 
-**1 - Fundamentos do Google Cloud Platform**
+### 2 - Google Cloud Computing Services**
 
-**2 - Google Cloud Computing Services**
+### 3 - Projetos, Service Accounts e Billings**
 
-**3 - Projetos, Service Accounts e Billings**
+### 4 - Introdução a Computação em Google Cloud**
 
-**4 - Introdução a Computação em Google Cloud**
+### 5 - Computing com Compute Engine Virtual Machine**
 
-**5 - Computing com Compute Engine Virtual Machine**
+### 6 - Gerenciando Virtual Machines**
 
-**6 - Gerenciando Virtual Machines**
+### 7 - Computação com Kubernetes**
 
-**7 - Computação com Kubernetes**
+### 8 - Gerenciando Cluster Kubernetes**
 
-**8 - Gerenciando Cluster Kubernetes**
+### 9 - Computação com Cloud Run e App Engine**
 
-**9 - Computação com Cloud Run e App Engine**
+### 10 - Computação com Cloud Functions**
 
-**10 - Computação com Cloud Functions**
+### 11 - Planejando Storage na Cloud**
 
-**11 - Planejando Storage na Cloud**
+### 12 - Deploying Storage no Google Cloud**
 
-**12 - Deploying Storage no Google Cloud**
+### 13 - Carregando datas no Storage**
 
-**13 - Carregando datas no Storage**
+### 14 - Network na Cloud: Virtual Private Clouds e Virtual Private Networks**
 
-**14 - Network na Cloud: Virtual Private Clouds e Virtual Private Networks**
+### 15 - Network na Cloud: DNS, Load Balancing, Google Private Access e IP Addressing**
 
-**15 - Network na Cloud: DNS, Load Balancing, Google Private Access e IP Addressing**
+### 16 - Deploying Applications com Cloud Marketplace e Cloud Foundation Toolkit**
 
-**16 - Deploying Applications com Cloud Marketplace e Cloud Foundation Toolkit**
+### 17 - Configurando acesso e segurança**
 
-**17 - Configurando acesso e segurança**
+### 18 - Monitorando, Logando e Estimando Custos**
 
-**18 - Monitorando, Logando e Estimando Custos**
-
-**19 - Simulados**
+### 19 - Simulados**
 
 ## 🚀 Materiais
 
