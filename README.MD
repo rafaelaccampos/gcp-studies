@@ -35,8 +35,10 @@ Exemplos:
 - Permite que os usuários acessem e utilizem aplicações hospededas na nuvem pela internet, geralmente atráves de um navegador WEB.
 Ex: Serviços de e-mail, e colaboração online.
 Exemplos:
-- Salesforce é uma plataforma de CRM (Customer Relationship Managament), baseada em nuvem que oferece uma variedade de aplicações empresariais
-- Google Workspace 
+- Salesforce - É uma plataforma de CRM (Customer Relationship Managament), baseada em nuvem que oferece uma variedade de aplicações empresariais.
+- Google Workspace - É uma suite de aplicativos como Gmail, Google Drive, Google Docs, Google Sheets, Google Slides.
+- Microsoft Office 365 - É uma suite de aplicações de produtividade baseada em nuvem da Microsoft que inclui Word, Excel, Powerpoint, Outlook, OneDrive, Teams e etc.
+
 
 ![Iaas, Paas, Saas](images/iaas-paas-saas.png)
 
