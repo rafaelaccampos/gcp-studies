@@ -8,7 +8,9 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 ### 00 - Fundamentos da Computação em Nuvem
 
 **O que é computação em nuvem?**
-![Computação em Nuvem - Unsplash](https://unsplash.com/photos/cloud-computing-technology-concept-background-white-cloud-connect-with-network-cable-3d-rendering-ZGvS7H9nYbk)
+
+![Computação em Nuvem - Unsplash](https://unsplash.com/photos/cloud-computing-technology-concept-background-white-cloud-connect-with-network-cable-3d-rendering-ZGvS7H9nYbk.png)
+
 - Computação em nuvem é a prática de alocar recursos computacionais através de provedores especializados, como GCP, AWS e Azure. Esses provedores oferecem a capacidade de provisionar rapidamente máquinas virtuais, proporcionando uma arquitetura que é tanto versionável quanto escalável. Esse provisionamento é facilitado por APIs de integração, permitindo que equipes de infraestrutura codifiquem e gerenciem recursos de forma eficiente..
 - Além de simplificar a gestão e o provisionamento, a computação em nuvem possibilita escalabilidade. Isso significa que a capacidade de processamento pode ser ampliada sem a necessidade de aumentar a complexidade de uma única máquina. Ao invés disso, sistemas podem ser replicados em várias máquinas distintas. Para realizar esse processo, utiliza-se um balanceador de carga (load balancer), que distribui as requisições de forma equilibrada entre as diferentes máquinas. Dessa maneira, o sistema opera de maneira distribuída, garantindo eficiência e disponibilidade.
 
