@@ -7,16 +7,49 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 ### 00 - Fundamentos da Computação em Nuvem
 
-![Computação em Nuvem](images/undraw_cloud_hosting_7xb1.svg)
+![Computação em Nuvem](images/cloud-computing.svg)
 
 **O que é Computação em Nuvem?**
-- Computação em nuvem é a prática de alocar recursos computacionais através de provedores especializados, como GCP, AWS e Azure. Esses provedores oferecem a capacidade de provisionar rapidamente máquinas virtuais, proporcionando uma arquitetura que é tanto versionável quanto escalável. Esse provisionamento é facilitado por APIs de integração, permitindo que equipes de infraestrutura codifiquem e gerenciem recursos de forma eficiente..
+- Computação em nuvem é a prática de alocar recursos computacionais através de provedores especializados, como GCP, AWS e Azure. Esses provedores oferecem a capacidade de provisionar rapidamente máquinas virtuais, proporcionando uma arquitetura que é tanto versionável quanto escalável. Esse provisionamento é facilitado por APIs de integração, permitindo que equipes de infraestrutura codifiquem e gerenciem recursos de forma eficiente.
 - Além de simplificar a gestão e o provisionamento, a computação em nuvem possibilita escalabilidade. Isso significa que a capacidade de processamento pode ser ampliada sem a necessidade de aumentar a complexidade de uma única máquina. Ao invés disso, sistemas podem ser replicados em várias máquinas distintas. Para realizar esse processo, utiliza-se um balanceador de carga (load balancer), que distribui as requisições de forma equilibrada entre as diferentes máquinas. Dessa maneira, o sistema opera de maneira distribuída, garantindo eficiência e disponibilidade.
 
 **Modelos de Serviço**
 
+![Iaas, Paas, Saas](images/iaas-paas-saas.png)
+
+**Infraestrutura como Serviço (IaaS)** 
+- Fornece acesso a recursos computacionais, como servidores virtuais, armazenamento e redes. Os usuários gerenciam os sistemas operacionais e as aplicações, enquanto o provedor de nuvem é responsável pela infraestrutura física.
+
+**Plataforma como Serviço (PaaS)**
+- Oferece uma plataforma completa de desenvolvimento e implantação de aplicações. Os desenvolvedores podem criar, executar e gerenciar aplicações sem se preocupar com a infraestrutura subjacente.
+
+**Software como Serviço (SaaS)**
+- Permite que os usuários acessem e utilizem aplicações hospededas na nuvem pela internet, geralmente atráves de um navegador WEB.
+Ex: Serviços de e-mail, gerenciamento de relacionamento (CRM) e colaboração online.
+
+**Modelos de implantação**
+
+**Nuvem pública** 
+- Recursos são disponibilizados ao público geral e operados por provedores de servidores de nuvem.
+
+**Nuvem privada**
+- Infraestrutura de nuvem é exclusivamente por uma única organização.
+
+**Nuvem hibrída**
+- Combina nuvens públicas e privadas, permitindo a transferência de dados e aplicações entre elas.
 
 **Vantagens**
+- Escabilidade
+- Flexibilidade
+- Redução de custos
+- Alta disponibilidade
+- Atualizações automáticas e acesso remoto
+
+**Desvantagens**
+- Questões de segurança
+- Conformidade
+- Dependência de provedores
+- Gerenciamento de custos
 
 
 ### 1 - Fundamentos do Google Cloud Platform
