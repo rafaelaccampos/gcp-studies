@@ -7,7 +7,7 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 ### 00 - Fundamentos da Computação em Nuvem
 
-![Computação em Nuvem](images/undraw_cloud_hosting_7xb1.svg)
+<img src="undraw_cloud_hosting_7xb1.svgV" alt="Computação em Nuvem" width="300" height="200">
 
 **O que é computação em nuvem?**
 - Computação em nuvem é a prática de alocar recursos computacionais através de provedores especializados, como GCP, AWS e Azure. Esses provedores oferecem a capacidade de provisionar rapidamente máquinas virtuais, proporcionando uma arquitetura que é tanto versionável quanto escalável. Esse provisionamento é facilitado por APIs de integração, permitindo que equipes de infraestrutura codifiquem e gerenciem recursos de forma eficiente..
