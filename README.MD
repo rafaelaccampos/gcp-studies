@@ -8,8 +8,9 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 ### 00 - Fundamentos da Computação em Nuvem
 
 **O que é computação em nuvem?**
-- É a alocação de serviços computacionais para um provedor que administra as máquinas (como GCP, AWS, Azure e etc), com a capacidade de provisionar agilidade na criação de máquinas, assim como uma arquitetura versionável e escalável. Isso acontece pelas APIs de integração que possibilitam a codificação dos recursos pela equipe de infraestrutura.
-- Além disso, a computação em nuvem também forneceu escalabilidade, ou seja, a ampliação da capacidade de processamento sem aumentar a complexidade da máquina, pois é possível copiar o sistema para diversas máquinas diferentes, e utilizar um balanceador de carga (load balancer) para gerenciar as requisições que chegam até elas, e com isso o sistema consegue funcionar de forma distribuída.
+![Computação em Nuvem - Unsplash](https://unsplash.com/photos/cloud-computing-technology-concept-background-white-cloud-connect-with-network-cable-3d-rendering-ZGvS7H9nYbk)
+- Computação em nuvem é a prática de alocar recursos computacionais através de provedores especializados, como GCP, AWS e Azure. Esses provedores oferecem a capacidade de provisionar rapidamente máquinas virtuais, proporcionando uma arquitetura que é tanto versionável quanto escalável. Esse provisionamento é facilitado por APIs de integração, permitindo que equipes de infraestrutura codifiquem e gerenciem recursos de forma eficiente..
+- Além de simplificar a gestão e o provisionamento, a computação em nuvem possibilita escalabilidade. Isso significa que a capacidade de processamento pode ser ampliada sem a necessidade de aumentar a complexidade de uma única máquina. Ao invés disso, sistemas podem ser replicados em várias máquinas distintas. Para realizar esse processo, utiliza-se um balanceador de carga (load balancer), que distribui as requisições de forma equilibrada entre as diferentes máquinas. Dessa maneira, o sistema opera de maneira distribuída, garantindo eficiência e disponibilidade.
 
 **Modelos de Serviço**
 
