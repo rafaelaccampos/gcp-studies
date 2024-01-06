@@ -15,6 +15,7 @@ Além disso, a computação em nuvem também forneceu a ampliação da capacidad
 
 **Vantagens**
 
+
 ### 1 - Fundamentos do Google Cloud Platform
 
 ### 2 - Google Cloud Computing Services**
