@@ -70,7 +70,15 @@ Exemplos:
 ### 1 - Fundamentos do Google Cloud Platform
 
 **O que é?**
- - O Google Cloud Platform (GCP) é uma suite de serviços de computação em nuvem oferecidos pelo Google.
+ - O Google Cloud Platform (GCP) é uma suíte de serviços de computação em nuvem oferecidos pelo Google.
+
+ **Regiões**
+ - O GCP consiste de recursos físicos e recursos virtuais.
+ - Os recursos físicos ou virtuais estão disponíveis nos data centers do Google.
+ - Os data centers estão distribuídos em **regiões**.
+ - Os data centers estão localizados na Ásia, Europa, Austrália, Américas, Oceania e entre outros e em cada uma dessas regiões tem divisões que são chamadas **zonas**.
+ - Cada zona tem um nome e é independente de outra zona para permitir redundância.
+
 
 **Tipos de serviços de computação em nuvem**
 - Compute resources
@@ -82,12 +90,13 @@ Exemplos:
 
 ### 3 - Projetos, Service Accounts e Billings
 
+**Projetos**
+- Cada recurso do GCP está organizado em projetos (billings, storages, network e etc).
+- Cada projeto tem um nome e um ID.
+
 ### 4 - Introdução a Computação em Google Cloud
 
-### 5 - Computing com Compute Engine Virtual Machine
-
-**Regiões e Zonas**
-![Regiões e Zonas doc - resumir](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br)
+### 5 - Computing com Compute Engine Virtual Machine 
 
 ### 6 - Gerenciando Virtual Machines
 
