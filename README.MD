@@ -86,6 +86,9 @@ Exemplos:
 
 ### 5 - Computing com Compute Engine Virtual Machine
 
+**Regiões e Zonas**
+![Regiões e Zonas doc - resumir](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br)
+
 ### 6 - Gerenciando Virtual Machines
 
 ### 7 - Computação com Kubernetes
