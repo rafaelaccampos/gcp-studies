@@ -39,7 +39,6 @@ Exemplos:
 - Google Workspace - É uma suite de aplicativos como Gmail, Google Drive, Google Docs, Google Sheets, Google Slides.
 - Microsoft Office 365 - É uma suite de aplicações de produtividade baseada em nuvem da Microsoft que inclui Word, Excel, Powerpoint, Outlook, OneDrive, Teams e etc.
 
-
 ![Iaas, Paas, Saas](images/iaas-paas-saas.png)
 
 
@@ -69,6 +68,15 @@ Exemplos:
 
 
 ### 1 - Fundamentos do Google Cloud Platform
+
+**O que é?**
+ - O Google Cloud Platform (GCP) é uma suite de serviços de computação em nuvem oferecidos pelo Google.
+
+**Tipos de serviços de computação em nuvem**
+- Compute resources
+- Storage
+- Networking
+- Specialized services such as machine learning services
 
 ### 2 - Google Cloud Computing Services
 
