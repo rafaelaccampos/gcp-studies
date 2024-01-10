@@ -54,7 +54,7 @@ Exemplos:
 - Combina nuvens públicas e privadas, permitindo a transferência de dados e aplicações entre elas.
 
 **Vantagens**
-- Escabilidade
+- Escalabilidade
 - Flexibilidade
 - Redução de custos
 - Alta disponibilidade
@@ -79,12 +79,11 @@ Exemplos:
  - Os data centers estão localizados na Ásia, Europa, Austrália, Américas, Oceania e entre outros e em cada uma dessas regiões tem divisões que são chamadas **zonas**.
  - Cada zona tem um nome e é independente de outra zona para permitir redundância.
 
-
 **Tipos de serviços de computação em nuvem**
 - Compute resources
 - Storage
 - Networking
-- Specialized services such as machine learning services
+- Serviços especializados, como Machine Learning
 
 ### 2 - Google Cloud Computing Services
 
