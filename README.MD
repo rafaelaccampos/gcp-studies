@@ -77,7 +77,10 @@ Exemplos:
  - Os recursos físicos ou virtuais estão disponíveis nos data centers do Google.
  - Os data centers estão distribuídos em **regiões**.
  - Os data centers estão localizados na Ásia, Europa, Austrália, Américas, Oceania e entre outros e em cada uma dessas regiões tem divisões que são chamadas **zonas**.
- - Cada zona tem um nome e é independente de outra zona para permitir redundância.
+ - Cada zona tem um nome e é independente de outra zona para permitir redundância. Ex: **us-west1** é uma **região** da costa oeste dos Estados Unidos que tem três **zonas**: **us-west1-a**, **us-west1-b** e **us-west1-c**.
+ - Alguns recursos somente podem ser visto pela zona em que ele reside, como por exemplo, instâncias de máquinas virtuais (virtual machine instances) e disco rígido zonais (zonal disk persistent), ou seja, só podem ser usados por recursos dessa mesma zona.
+ - Alguns recursos são regionais, como por exemplo, um endereço de IP externo (external IP Address), pode ser usado por qualquer outro recurso naquela região independente da zona.
+ - Ex: Se você quiser anexar um disco rígido (disk persistent) a uma máquina virtual (instance), ambos devem estar na mesma zona. Assim como, se você quiser endereçar um endereço de IP estático externo (external static IP Address) para uma instância (virtual machine), a instância deve estar na mesma região do endereço de IP (external IP Address).
 
 **Tipos de serviços de computação em nuvem**
 - Compute resources
