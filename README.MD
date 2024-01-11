@@ -21,7 +21,7 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 Exemplos:
 - AWS: Amazon EC2 (Simple Storage Service) para computação virtualizada, Amazon S3 (Simple Storage Service) para armazenamento de objetos, Amazon VPC (Virtual Private Cloud) para redes isoladas e Amazon RDS (Relational Database Service) para banco de dados relacionais.
-- Microsoft Azure: Máquinas Virtuais para computação virtualizada, Azure Blob para armazenamento de objetos, Rede virtuais do Azure e banco de dados gerenciados, como o Azure SQL Database.
+- Microsoft Azure: Máquinas Virtuais para computação virtualizada, Azure Blob para armazenamento de objetos, Redes virtuais do Azure e banco de dados gerenciados, como o Azure SQL Database.
 - Google Cloud Platform: Compute Engine para instâncias de máquinas virtuais, Cloud storage para armazenamento de objetos e Virtual Private Cloud (VPC) para redes privadas.
 
 **Plataforma como Serviço (PaaS)**
