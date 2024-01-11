@@ -73,8 +73,18 @@ Exemplos:
  - O Google Cloud Platform (GCP) é uma suíte de serviços de computação em nuvem oferecidos pelo Google.
 
 **Tipos de serviços de computação em nuvem**
+
 - Compute resources
+**Virtual Machines**
+**Managed Kubernetes Clusters**
+**Serveless Computing**
+
 - Storage
+**Object Storage**
+**File Storage**
+**Block Storage**
+**Caches**
+
 - Networking
 - Serviços especializados, como Machine Learning
 
