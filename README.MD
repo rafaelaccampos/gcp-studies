@@ -72,16 +72,6 @@ Exemplos:
 **O que é?**
  - O Google Cloud Platform (GCP) é uma suíte de serviços de computação em nuvem oferecidos pelo Google.
 
- **Regiões**
- - O GCP consiste de recursos físicos e recursos virtuais.
- - Os recursos físicos ou virtuais estão disponíveis nos data centers do Google.
- - Os data centers estão distribuídos em **regiões**.
- - Os data centers estão localizados na Ásia, Europa, Austrália, Américas, Oceania e entre outros e em cada uma dessas regiões tem divisões que são chamadas **zonas**.
- - Cada zona tem um nome e é independente de outra zona para permitir redundância. Ex: **us-west1** é uma **região** da costa oeste dos Estados Unidos que tem três **zonas**: **us-west1-a**, **us-west1-b** e **us-west1-c**.
- - Alguns recursos somente podem ser visto pela zona em que ele reside, como por exemplo, instâncias de máquinas virtuais (virtual machine instances) e disco rígido zonais (zonal disk persistent), ou seja, só podem ser usados por recursos dessa mesma zona.
- - Alguns recursos são regionais, como por exemplo, um endereço de IP externo (external IP Address), pode ser usado por qualquer outro recurso naquela região independente da zona.
- - Ex: Se você quiser anexar um disco rígido (disk persistent) a uma máquina virtual (instance), ambos devem estar na mesma zona. Assim como, se você quiser endereçar um endereço de IP estático externo (external static IP Address) para uma instância (virtual machine), a instância deve estar na mesma região do endereço de IP (external IP Address).
-
 **Tipos de serviços de computação em nuvem**
 - Compute resources
 - Storage
@@ -99,6 +89,27 @@ Exemplos:
 ### 4 - Introdução a Computação em Google Cloud
 
 ### 5 - Computing com Compute Engine Virtual Machine 
+
+ **Regiões**
+ - O GCP consiste de recursos físicos e recursos virtuais.
+ - Os recursos físicos ou virtuais estão disponíveis nos data centers do Google.
+ - Os data centers estão distribuídos em **regiões**.
+ - Os data centers estão localizados na Ásia, Europa, Austrália, Américas, Oceania e entre outros e em cada uma dessas regiões tem divisões que são chamadas **zonas**.
+ - Cada zona tem um nome e é independente de outra zona para permitir redundância. Ex: **us-west1** é uma **região** da costa oeste dos Estados Unidos que tem três **zonas**: **us-west1-a**, **us-west1-b** e **us-west1-c**.
+ - Alguns recursos somente podem ser visto pela zona em que ele reside, como por exemplo, instâncias de máquinas virtuais (virtual machine instances) e disco rígido zonais (zonal disk persistent), ou seja, só podem ser usados por recursos dessa mesma zona.
+ - Alguns recursos são regionais, como por exemplo, um endereço de IP externo (external IP Address), pode ser usado por qualquer outro recurso naquela região independente da zona.
+ - Ex: Se você quiser anexar um disco rígido (disk persistent) a uma máquina virtual (instance), ambos devem estar na mesma zona. Assim como, se você quiser endereçar um endereço de IP estático externo (external static IP Address) para uma instância (virtual machine), a instância deve estar na mesma região do endereço de IP (external IP Address).
+
+**Notas**
+-IP estático externo:
+- Refere-se a um endereço IP (IPV4) que não muda, independentemente de reinicilizações ou desconexões.
+- Fixo e permanente para o recurso ou dispositivo ao qual foi atribuído.
+- Usado para situações que é necessário comunicação com a Internet ou recursos que estão em outra VPC Network, se as políticas de Firewall ou políticas permitirem a conexão, origens de fora de uma VPC conseguem acessar esse recurso.
+- Somente recursos com um IP externo podem se comunicar com recursos fora da VPC Network.
+- Endereços de IPv4 externos estão disponíveis para todas as VMs.
+- São úteis para serviços ou aplicações que precisam ser acessíveis constantemente por um endereço IP específico, um endereço IP estático é essencial. Isso é comum em configurações de rede que exigem regras de firewall específicas, VPNs, ou quando se deseja evitar interrupções na comunicação devido a mudanças no endereço IP.
+- A comunicação de um recurso usando um IP externo estático pode resultar em custos.
+- Um endereço IP estático pode melhorar a segurança, pois permite a configuração de regras de firewall ou políticas de redes específicas para um IP conhecido e fixo. Além disso, para aplicações críticas ou serviços que requerem alta disponibilidade, a previsibilidade pode contribuir para uma operação mais confiável.
 
 ### 6 - Gerenciando Virtual Machines
 
