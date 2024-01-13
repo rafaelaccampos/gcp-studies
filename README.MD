@@ -74,12 +74,21 @@ Exemplos:
 
 **Tipos de serviços de computação em nuvem**
 
-- Compute resources
+- 1. Compute resources
+
 **Virtual Machines**
+- VM é um emulador de computador que atua como se fosse executado em um hardware físico real.
+- A VM atua como um computador independente, tem seu próprio S.O, aplicações e recursos de armazenamento.
+- Com a VM é possível criar sistemas de arquivos, disco rígido, atualizações do sistema operacional e etc.
+- No GCP você tem total controle sobre a VM, o que colocar, quem vai acessar e quando desligar.
+- É possível criar múltiplas VMs, e com o load balancer é possível ter um único ponto de acesso para um back-end distribuído.
+- Se uma VM em um cluster falhar, o workload pode ser direcionado para outra VM no cluster.
+- Autoscalers podem adicionar ou remover VMs do cluster baseado nos workloads (autoscaling), isso ajuda a reduzir custos e garantir que existe capacidade computacional disponível quando o workload aumentar.
+
 **Managed Kubernetes Clusters**
 **Serveless Computing**
 
-- Storage
+- 2. Storage
 **Object Storage**
 **File Storage**
 **Block Storage**
