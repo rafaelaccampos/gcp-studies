@@ -85,7 +85,17 @@ Exemplos:
 - Se uma VM em um cluster falhar, o workload pode ser direcionado para outra VM no cluster.
 - Autoscalers podem adicionar ou remover VMs do cluster baseado nos workloads (autoscaling), isso ajuda a reduzir custos e garantir que existe capacidade computacional disponível quando o workload aumentar.
 
-**Managed Kubernetes Clusters**
+**Managed Kubernetes Clusters (GKE)**
+- São ambientes Kubernetes totalmente gerenciados pelo GCP.
+- São responsáveis por configurar, gerenciar, atualizar e escalar o cluster.
+- Isso é especialmente útil quando usuários querem focar na sua aplicação e não na infraestrutura.
+- Managed Kubernetes Clusters fazem uso de containers.
+- Em Managed Kubernetes Clusters, você consegue especificar o número de servidores (VMs) e o número de containers que devem rodar neles.
+- Também é possível configurar autoscaling para o número de containers que está rodando.
+- A saúde (health) dos containers é monitorada para você.
+- Se um container falhar, o cluster do GKE irá detectar e iniciar outro para você.
+- Os serviços são publicados (deploy) por containers, e o serviço gerenciador de clusters cuida do monitoramento, rede e gerenciamento de tasks de segurança.
+
 **Serveless Computing**
 
 - 2. Storage
