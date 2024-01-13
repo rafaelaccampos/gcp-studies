@@ -65,7 +65,7 @@ Exemplos:
 - Conformidade
 - Dependência de provedores
 - Gerenciamento de custos
-
+---
 
 ### 1 - Fundamentos do Google Cloud Platform
 
@@ -124,7 +124,6 @@ Exemplos:
 - Criação de containers usando qualquer linguagem de programação e execução como serviços serveless.
 - Fornece escalabilidade automática com base na demanda
 - É usado quando todas as funcionalidades do Kubernetes não são necessárias.
----
 
  #### 2. Storage
 
@@ -132,11 +131,12 @@ Exemplos:
  **File Storage**
  **Block Storage**
  **Caches**
+
+#### 3. Networking
+
+#### 4. Serviços especializados, como Machine Learning
+
 ---
-
-#### 3.Networking
-- Serviços especializados, como Machine Learning
-
 ### 2 - Google Cloud Computing Services
 
 ### 3 - Projetos, Service Accounts e Billings
