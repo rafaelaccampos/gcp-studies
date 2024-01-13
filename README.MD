@@ -19,7 +19,7 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 **Infraestrutura como Serviço (IaaS)** 
 - Fornece acesso a recursos computacionais, como servidores virtuais, armazenamento e redes. Os usuários gerenciam os sistemas operacionais e as aplicações, enquanto o provedor de nuvem é responsável pela infraestrutura física.
 
-Exemplos:
+**Exemplos**:
 - AWS: Amazon EC2 (Simple Storage Service) para computação virtualizada, Amazon S3 (Simple Storage Service) para armazenamento de objetos, Amazon VPC (Virtual Private Cloud) para redes isoladas e Amazon RDS (Relational Database Service) para banco de dados relacionais.
 - Microsoft Azure: Máquinas Virtuais para computação virtualizada, Azure Blob para armazenamento de objetos, Redes virtuais do Azure e banco de dados gerenciados, como o Azure SQL Database.
 - Google Cloud Platform: Compute Engine para instâncias de máquinas virtuais, Cloud storage para armazenamento de objetos e Virtual Private Cloud (VPC) para redes privadas.
@@ -33,8 +33,8 @@ Exemplos:
 
 **Software como Serviço (SaaS)**
 - Permite que os usuários acessem e utilizem aplicações hospededas na nuvem pela internet, geralmente atráves de um navegador WEB.
-Ex: Serviços de e-mail, e colaboração online.
-Exemplos:
+
+**Exemplos**:
 - Salesforce - É uma plataforma de CRM (Customer Relationship Managament), baseada em nuvem que oferece uma variedade de aplicações empresariais.
 - Google Workspace - É uma suite de aplicativos como Gmail, Google Drive, Google Docs, Google Sheets, Google Slides.
 - Microsoft Office 365 - É uma suite de aplicações de produtividade baseada em nuvem da Microsoft que inclui Word, Excel, Powerpoint, Outlook, OneDrive, Teams e etc.
@@ -74,7 +74,7 @@ Exemplos:
 
 **Tipos de serviços de computação em nuvem**
 
-- 1. Compute resources
+**1. Compute resources**
 
 **Virtual Machines**
 - VM é um emulador de computador que atua como se fosse executado em um hardware físico real.
@@ -88,23 +88,26 @@ Exemplos:
 **Managed Kubernetes Clusters (GKE)**
 - São ambientes Kubernetes totalmente gerenciados pelo GCP.
 - São responsáveis por configurar, gerenciar, atualizar e escalar o cluster.
-- Isso é especialmente útil quando usuários querem focar na sua aplicação e não na infraestrutura.
+- Isso é especialmente útil quando os usuários querem focar na sua aplicação e não na infraestrutura.
 - Managed Kubernetes Clusters fazem uso de containers.
-- Em Managed Kubernetes Clusters, você consegue especificar o número de servidores (VMs) e o número de containers que devem rodar neles.
+- Em Managed Kubernetes Clusters, você consegue especificar o número de servidores (VMs) e o número de containers que devem rodar nelas.
 - Também é possível configurar autoscaling para o número de containers que está rodando.
 - A saúde (health) dos containers é monitorada para você.
 - Se um container falhar, o cluster do GKE irá detectar e iniciar outro para você.
 - Os serviços são publicados (deploy) por containers, e o serviço gerenciador de clusters cuida do monitoramento, rede e gerenciamento de tasks de segurança.
 
 **Serveless Computing**
+---
 
-- 2. Storage
-**Object Storage**
-**File Storage**
-**Block Storage**
-**Caches**
+ **2. Storage**
 
-- Networking
+ **Object Storage**
+ **File Storage**
+ **Block Storage**
+ **Caches**
+---
+
+ **3.Networking**
 - Serviços especializados, como Machine Learning
 
 ### 2 - Google Cloud Computing Services
