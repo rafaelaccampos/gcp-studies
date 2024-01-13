@@ -74,7 +74,7 @@ Exemplos:
 
 **Tipos de serviços de computação em nuvem**
 
-**1. Compute resources**
+#### 1. Compute resources
 
 **Virtual Machines**
 - VM é um emulador de computador que atua como se fosse executado em um hardware físico real.
@@ -97,9 +97,36 @@ Exemplos:
 - Os serviços são publicados (deploy) por containers, e o serviço gerenciador de clusters cuida do monitoramento, rede e gerenciamento de tasks de segurança.
 
 **Serveless Computing**
+- Serveless Computing é um modelo de execução de aplicações na nuvem em que o provedor de serviços gerencia automaticamente a infraestrutura necessária para executar o código.
+- Tanto VMs quanto o GKE necessitam de algum esforço de configuração e administração de recursos computacionais, enquanto no Serveless Computing, isso não é necessário.
+- No Serveless Computing a precificação é baseada no consumo real de recursos, como o tempo de execução do código e a quantidade de memória utilizada. Isso significa que os usuários só pagam pelo tempo que o código está em execução.
+- AutoScale automático de acordo com à demanda, ou seja, consegue alocar mais ou menos recursos de acordo com que a aplicação precisa.
+- Pode ser projetada para executar código em resposta a eventos específicos, como alterações em banco de dados, upload de arquivos ou chamadas de API. Isso é conhecido como funções serveless (FaaS).
+- Reduz o overhead para os desenvolvedores, permitindo que eles foquem na lógica da aplicação pela redução do tempo em operar e manter a infraestrutura.
+
+**Três tipos de serveless computing**
+
+**Cloud Functions**
+- É um serviço para rodar código em resposta a um evento (trigger), como upload de um arquivo, adição de uma mensagem na fila, alterações em banco de dados ou chamadas na API e etc.
+- É uma boa opção quando é necessário responder um evento (trigger) rodando uma porção de código em uma função ou para chamar uma aplicação que pode estar contida na VM, GKE ou App Engine.
+- Escala automaticamente de acordo com a demanda, executando o código em resposta a eventos específicos.
+- Suporta várias linguagens programação como: C#, Java, Go, Python e etc.
+
+**App Engine**
+- É uma plataforma de desenvolvimento e hospedagem de aplicações totalmente gerenciada que permite que os desenvolvedores não se preocupem com infraestrutura.
+- Usado para aplicações que ficam ativas em longos períodos de tempo, como o back-end de um site, pontos de venda e etc.
+- Fornece ambiente de desenvolvimento e hospedagem de aplicações diretamente, com bases nas linguagens suportadas por ele.
+- Fornece escalabilidade automática com base na demanda da aplicação.
+- Pode ser configurado para executar aplicações em ambientes padrão ou flexível.
+
+**Cloud Run**
+- É um serviço que permite execução de containers de maneira serveless, fornecendo uma camada de abstração sobre a infraestrutura.
+- Criação de containers usando qualquer linguagem de programação e execução como serviços serveless.
+- Fornece escalabilidade automática com base na demanda
+- É usado quando todas as funcionalidades do Kubernetes não são necessárias.
 ---
 
- **2. Storage**
+ #### 2. Storage
 
  **Object Storage**
  **File Storage**
@@ -107,7 +134,7 @@ Exemplos:
  **Caches**
 ---
 
- **3.Networking**
+#### 3.Networking
 - Serviços especializados, como Machine Learning
 
 ### 2 - Google Cloud Computing Services
