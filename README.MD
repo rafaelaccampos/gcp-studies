@@ -112,6 +112,8 @@ Exemplos:
 - Escala automaticamente de acordo com a demanda, executando o código em resposta a eventos específicos.
 - Suporta várias linguagens programação como: C#, Java, Go, Python e etc.
 
+![Cloud Functions](images/cloudfunctions.png)
+
 **App Engine**
 - É uma plataforma de desenvolvimento e hospedagem de aplicações totalmente gerenciada que permite que os desenvolvedores não se preocupem com infraestrutura.
 - Usado para aplicações que ficam ativas em longos períodos de tempo, como o back-end de um site, pontos de venda e etc.
@@ -119,11 +121,15 @@ Exemplos:
 - Fornece escalabilidade automática com base na demanda da aplicação.
 - Pode ser configurado para executar aplicações em ambientes padrão ou flexível.
 
+![App Engine](images/appengine.jpg)
+
 **Cloud Run**
 - É um serviço que permite execução de containers de maneira serveless, fornecendo uma camada de abstração sobre a infraestrutura.
 - Criação de containers usando qualquer linguagem de programação e execução como serviços serveless.
 - Fornece escalabilidade automática com base na demanda
 - É usado quando todas as funcionalidades do Kubernetes não são necessárias.
+
+![Cloud Run](images/cloudrun.jpg)
 
  #### 2. Storage
 
