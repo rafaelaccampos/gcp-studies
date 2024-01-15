@@ -126,12 +126,14 @@ Exemplos:
 **Cloud Run**
 - É um serviço que permite execução de containers de maneira serveless, fornecendo uma camada de abstração sobre a infraestrutura.
 - Criação de containers usando qualquer linguagem de programação e execução como serviços serveless.
-- Fornece escalabilidade automática com base na demanda
+- Fornece escalabilidade automática com base na demanda.
 - É usado quando todas as funcionalidades do Kubernetes não são necessárias.
 
 ![Cloud Run](images/cloudrun.jpg)
 
  #### 2. Storage
+- Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações
+![Cloud Storage](images/cloud-storage)
 
  **Object Storage**
  **File Storage**
