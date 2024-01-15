@@ -133,7 +133,8 @@ Exemplos:
 
  #### 2. Storage
 - Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações
-![Cloud Storage](images/cloud-storage)
+
+![Cloud Storage](images/cloud-storage.png)
 
  **Object Storage**
  **File Storage**
