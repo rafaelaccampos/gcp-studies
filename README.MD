@@ -137,6 +137,11 @@ Exemplos:
 ![Cloud Storage](images/cloud-storage.png)
 
  **Object Storage**
+ - O object storage é um sistema que gerencia o armazenamento em objects ou blobs.
+ - Normalmente esses objetos são arquivos, mas não armazenados num sistema de arquivos convencional.
+ - Objects são agrupados em buckets.
+ - Cada object é individualmente acessível por meio de uma URL.
+
  **File Storage**
  **Block Storage**
  **Caches**
