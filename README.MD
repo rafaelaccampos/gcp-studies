@@ -134,13 +134,19 @@ Exemplos:
  #### 2. Storage
 - Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações
 
-![Cloud Storage](images/cloud-storage.png)
+ **Object Storage / Cloud Storage**
 
- **Object Storage**
- - O object storage é um sistema que gerencia o armazenamento em objects ou blobs.
+ - O object storage é um sistema que gerencia o armazenamento de objetos em objects ou blobs, de forma segura, escalável e global.
+ - É usado para objetos que tem datas imutáveis, como imagens, textos, videos e outros formatos de arquivos.
  - Normalmente esses objetos são arquivos, mas não armazenados num sistema de arquivos convencional.
  - Objects são agrupados em buckets.
  - Cada object é individualmente acessível por meio de uma URL.
+ - Object storage não são limitados pelo tamanho do disco ou por SSDs anexados ao servidor.
+ - Múltiplas cópias de objects são armazenados para melhorar disponibilidade e durabilidade.
+ - Alguns casos objects são salvos em diferentes para garantir disponibilidade quando uma região não estiver disponível.
+ - É serveless, não é necessário uma VM para anexar storage para ele.
+
+ ![Cloud Storage](images/cloud-storage.png)
 
  **File Storage**
  **Block Storage**
