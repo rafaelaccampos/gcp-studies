@@ -134,21 +134,26 @@ Exemplos:
  #### 2. Storage
 - Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações
 
- **Object Storage / Cloud Storage**
+ **Object Storage ou Cloud Storage**
 
  - O object storage é um sistema que gerencia o armazenamento de objetos em objects ou blobs, de forma segura, escalável e global.
- - É usado para objetos que tem datas imutáveis, como imagens, textos, videos e outros formatos de arquivos.
+ - É usado para objetos que tem dados imutáveis, como imagens, textos, videos e outros formatos de arquivos.
  - Normalmente esses objetos são arquivos, mas não armazenados num sistema de arquivos convencional.
- - Objects são agrupados em buckets.
+ - Objects são agrupados em buckets, ou seja são containers de armazenamento para objects.
+ - Buckets tem um nome globalmente exclusivo, o que significa que os buckets devem ser únicos em todo o GCP.
+ - Dentro do bucket, você pode organizar seus objetos em uma estrutura de diretórios ou pastas (apesar de não existirem diretórios reais).
+ - É possível configurar políticas de controle de acesso para buckets, especificando quem pode acessar e executar ações nos objects. Isso é feito pelo Identity and Access Management (IAM) do GCP.
+ - Você pode também escolher a localização geográfica em que o bucket será armazenado. Isso afeta latência e desempenho.
  - Cada object é individualmente acessível por meio de uma URL.
  - Object storage não são limitados pelo tamanho do disco ou por SSDs anexados ao servidor.
  - Múltiplas cópias de objects são armazenados para melhorar disponibilidade e durabilidade.
- - Alguns casos objects são salvos em diferentes para garantir disponibilidade quando uma região não estiver disponível.
+ - Em alguns casos, objects são salvos em diferentes regiões para garantir disponibilidade, quando uma região não estiver disponível.
  - É serveless, não é necessário uma VM para anexar storage para ele.
 
  ![Cloud Storage](images/cloud-storage.png)
 
  **File Storage**
+
  **Block Storage**
  **Caches**
 
