@@ -135,7 +135,6 @@ Exemplos:
 - Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações
 
  **Object Storage ou Cloud Storage**
-
  - O object storage é um sistema que gerencia o armazenamento de objetos em objects ou blobs, de forma segura, escalável e global.
  - É usado para objetos que tem dados imutáveis, como imagens, textos, videos e outros formatos de arquivos.
  - Normalmente esses objetos são arquivos, mas não armazenados num sistema de arquivos convencional.
@@ -152,8 +151,15 @@ Exemplos:
 
  ![Cloud Storage](images/cloud-storage.png)
 
- **File Storage**
-
+ **File Storage ou Cloud Filestore**
+- File storage é um serviço de armazenamento gerenciado pelo GCP para oferecer compartilhamento de arquivos totalmente gerenciado para VMs.
+- O objetivo é fornecer um sistema de arquivos compartilhado e acessível para várias VMs em uma mesma rede.
+- Baseado no protocolo de sistema de arquivos de rede (NFS), facilitando integrações com sistemas operacionais Linux.
+- Oferece tipos de armazenamento Standard e SSD.
+- Integra com outros serviços e recursos do GCP, como Identity and Access Management (IAM), VPC (Virtual Private Cloud) e outras ferramentas.
+- Suporta políticas de controle de acesso baseados em IAM, garantindo que apenas VMs autorizadas possam acessar o compartilhamento de arquivos.
+- Alguns exemplos de uso são: armazenamento de dados para Aplicações Linux, desenvolvimento e teste colaborativo, processamento de dados em lote, armazenamento compartilhado de informações e renderização de animações gráficas.
+ 
  **Block Storage**
  **Caches**
 
