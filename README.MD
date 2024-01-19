@@ -172,6 +172,9 @@ Exemplos:
  - Banco de dados relacionais normalmente usam block size como 8k ou mais.
 
  **Caches**
+- Caches são armazenamentos de dados em memória com o objetivo de recuperar dados de maneira rápida
+- São especialmente úteis quando se quer diminuir a latência ao recuperar os dados
+- Exemplos: Memcached.
 
 #### 3. Networking
 
