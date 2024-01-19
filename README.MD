@@ -159,13 +159,21 @@ Exemplos:
 - Integra com outros serviços e recursos do GCP, como Identity and Access Management (IAM), VPC (Virtual Private Cloud) e outras ferramentas.
 - Suporta políticas de controle de acesso baseados em IAM, garantindo que apenas VMs autorizadas possam acessar o compartilhamento de arquivos.
 - Alguns exemplos de uso são: armazenamento de dados para Aplicações Linux, desenvolvimento e teste colaborativo, processamento de dados em lote, armazenamento compartilhado de informações e renderização de animações gráficas.
- 
- **Block Storage**
+
+ **Block Storage ou Google Cloud Persistent Disk**
+ - Block storage usa uma estrutura de dados de tamanho fixo chamado block para organizar dados.
+ - Fornece armazenamento durável e de alto desempenho para máquinas virtuais no GCP.
+ - Usado em persistent disk ou ephemeral disk vinculados a VMs.
+ - Persistent disks continuam existindo e salvando dados, mesmo quando desvinculados do servidor virtual ou quando o servidor virtual desliga.
+ - Ephemeral disks somente existem e salvam dados, enquanto a VM está rodando. São excluídos quando a VM desliga.
+ - Possibilidade de instalar um sistema de arquivos para rodar as aplicações ou acessá-las diretamente pelo block.
+ - Alguns bancos de dados relacionais frequentemente escrevem diretamente nos blocks.
+ - Sistemas de arquivos Linux tem geralmente um block size de 4k.
+ - Banco de dados relacionais normalmente usam block size como 8k ou mais.
+
  **Caches**
 
 #### 3. Networking
-
-#### 4. Serviços especializados, como Machine Learning
 
 ---
 ### 2 - Google Cloud Computing Services
