@@ -132,13 +132,15 @@ Exemplos:
 ![Cloud Run](images/cloudrun.jpg)
 
  #### 2. Storage
-- Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações
+- Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações.
+
+![Storage Options](images/storageoptions.jpg)
 
  **Object Storage ou Cloud Storage**
  - O object storage é um sistema que gerencia o armazenamento de objetos em objects ou blobs, de forma segura, escalável e global.
  - É usado para objetos que tem dados imutáveis, como imagens, textos, videos e outros formatos de arquivos.
- - Normalmente esses objetos são arquivos, mas não armazenados num sistema de arquivos convencional.
- - Objects são agrupados em buckets, ou seja são containers de armazenamento para objects.
+ - Normalmente esses objetos são arquivos, mas não são armazenados num sistema de arquivos convencional.
+ - Objects são agrupados em buckets, ou seja, são containers de armazenamento para objects.
  - Buckets tem um nome globalmente exclusivo, o que significa que os buckets devem ser únicos em todo o GCP.
  - Dentro do bucket, você pode organizar seus objetos em uma estrutura de diretórios ou pastas (apesar de não existirem diretórios reais).
  - É possível configurar políticas de controle de acesso para buckets, especificando quem pode acessar e executar ações nos objects. Isso é feito pelo Identity and Access Management (IAM) do GCP.
