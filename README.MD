@@ -179,7 +179,28 @@ Exemplos:
 - Exemplos: Memcached.
 
 #### 3. Networking
+- Quando se tem múltiplas VMs rodando em um ambiente cloud será necessário administrar endereços de IPs em algum momento.
+- Cada recurso e serviço acessível na rede vai ser necessário ter um endereço de IP.
+- Endereços de IPs internos são acessíveis somente por serviços dentro de sua rede privada (VPC - Virtual Private Cloud).
+- Endereços externos são acessíveis pela internet.
+- Endereços externos podem ser static ou ephemeral.
+- External static address são endereçados para um recurso de maneira permanente, enquanto External ephemeral address são vinculados a VMs e disponibilizados assim que a VM para.
+- Na especificação dos endereços de IPs, também é preciso definir regras de Firewall para controlar o acesso para subnetworks e VMs em  sua VPC.
+- Se você tem um servidor de banco de dados e quiser restringir o acesso para somente uma aplicação puder fazer operações no banco de dados. Uma regra de Firewall pode ser configurada para restringir o tráfico interno e externo do endereço de IP para a aplicação ou para o load balancer em frente ao cluster da aplicação.
+- Para compartilhar dados e acesso a rede entre on-premises datacenter e a VPC é necessário usar algum tipo de peering, o que é o termo geral para conectar (linking) diferentes redes.
+- O GCP oferece alguns tipos de peering: VPNs, Interconnects, Shared VPC, VPC networking peering, Direct e Carrier peering.
 
+**Notas**
+
+-IP estático externo:
+- Refere-se a um endereço IP (IPV4) que não muda, independentemente de reinicilizações ou desconexões.
+- Fixo e permanente para o recurso ou dispositivo ao qual foi atribuído.
+- Usado para situações que é necessário comunicação com a Internet ou recursos que estão em outra VPC Network, se as políticas de Firewall ou políticas permitirem a conexão, origens de fora de uma VPC conseguem acessar esse recurso.
+- Somente recursos com um IP externo podem se comunicar com recursos fora da VPC Network.
+- Endereços de IPv4 externos estão disponíveis para todas as VMs.
+- São úteis para serviços ou aplicações que precisam ser acessíveis constantemente por um endereço IP específico, um endereço IP estático é essencial. Isso é comum em configurações de rede que exigem regras de firewall específicas, VPNs, ou quando se deseja evitar interrupções na comunicação devido a mudanças no endereço IP.
+- A comunicação de um recurso usando um IP externo estático pode resultar em aumento de custos.
+- Um endereço IP estático pode melhorar a segurança, pois permite a configuração de regras de firewall ou políticas de redes específicas para um IP conhecido e fixo. Além disso, para aplicações críticas ou serviços que requerem alta disponibilidade, a previsibilidade pode contribuir para uma operação mais confiável.
 ---
 ### 2 - Google Cloud Computing Services
 
@@ -202,17 +223,7 @@ Exemplos:
  - Alguns recursos somente podem ser visto pela zona em que ele reside, como por exemplo, instâncias de máquinas virtuais (virtual machine instances) e disco rígido zonais (zonal disk persistent), ou seja, só podem ser usados por recursos dessa mesma zona.
  - Alguns recursos são regionais, como por exemplo, um endereço de IP externo (external IP Address), pode ser usado por qualquer outro recurso naquela região independente da zona.
  - Ex: Se você quiser anexar um disco rígido (disk persistent) a uma máquina virtual (instance), ambos devem estar na mesma zona. Assim como, se você quiser endereçar um endereço de IP estático externo (external static IP Address) para uma instância (virtual machine), a instância deve estar na mesma região do endereço de IP (external IP Address).
-
-**Notas**
--IP estático externo:
-- Refere-se a um endereço IP (IPV4) que não muda, independentemente de reinicilizações ou desconexões.
-- Fixo e permanente para o recurso ou dispositivo ao qual foi atribuído.
-- Usado para situações que é necessário comunicação com a Internet ou recursos que estão em outra VPC Network, se as políticas de Firewall ou políticas permitirem a conexão, origens de fora de uma VPC conseguem acessar esse recurso.
-- Somente recursos com um IP externo podem se comunicar com recursos fora da VPC Network.
-- Endereços de IPv4 externos estão disponíveis para todas as VMs.
-- São úteis para serviços ou aplicações que precisam ser acessíveis constantemente por um endereço IP específico, um endereço IP estático é essencial. Isso é comum em configurações de rede que exigem regras de firewall específicas, VPNs, ou quando se deseja evitar interrupções na comunicação devido a mudanças no endereço IP.
-- A comunicação de um recurso usando um IP externo estático pode resultar em custos.
-- Um endereço IP estático pode melhorar a segurança, pois permite a configuração de regras de firewall ou políticas de redes específicas para um IP conhecido e fixo. Além disso, para aplicações críticas ou serviços que requerem alta disponibilidade, a previsibilidade pode contribuir para uma operação mais confiável.
+---
 
 ### 6 - Gerenciando Virtual Machines
 
