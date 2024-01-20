@@ -184,13 +184,13 @@ Exemplos:
 - Endereços de IPs internos são acessíveis somente por serviços dentro de sua rede privada (VPC - Virtual Private Cloud).
 - Endereços externos são acessíveis pela internet.
 - Endereços externos podem ser static ou ephemeral.
-- External static address são endereçados para um recurso de maneira permanente, enquanto External ephemeral address são vinculados a VMs e disponibilizados assim que a VM para.
+- External static address são endereçados para um recurso de maneira permanente, enquanto External ephemeral address são vinculados a VMs e liberados assim que a VM para.
 - Na especificação dos endereços de IPs, também é preciso definir regras de Firewall para controlar o acesso para subnetworks e VMs em  sua VPC.
 - Se você tem um servidor de banco de dados e quiser restringir o acesso para somente uma aplicação puder fazer operações no banco de dados. Uma regra de Firewall pode ser configurada para restringir o tráfico interno e externo do endereço de IP para a aplicação ou para o load balancer em frente ao cluster da aplicação.
-- Para compartilhar dados e acesso a rede entre on-premises datacenter e a VPC é necessário usar algum tipo de peering, o que é o termo geral para conectar (linking) diferentes redes.
+- Para compartilhar dados e acesso a rede entre on-premises data center e a VPC é necessário usar algum tipo de peering, o que é o termo geral para conectar (linking) diferentes redes.
 - O GCP oferece alguns tipos de peering: VPNs, Interconnects, Shared VPC, VPC networking peering, Direct e Carrier peering.
 
-**Notas**
+**Notas: Endereço IP estático externo**
 
 -IP estático externo:
 - Refere-se a um endereço IP (IPV4) que não muda, independentemente de reinicilizações ou desconexões.
@@ -201,6 +201,15 @@ Exemplos:
 - São úteis para serviços ou aplicações que precisam ser acessíveis constantemente por um endereço IP específico, um endereço IP estático é essencial. Isso é comum em configurações de rede que exigem regras de firewall específicas, VPNs, ou quando se deseja evitar interrupções na comunicação devido a mudanças no endereço IP.
 - A comunicação de um recurso usando um IP externo estático pode resultar em aumento de custos.
 - Um endereço IP estático pode melhorar a segurança, pois permite a configuração de regras de firewall ou políticas de redes específicas para um IP conhecido e fixo. Além disso, para aplicações críticas ou serviços que requerem alta disponibilidade, a previsibilidade pode contribuir para uma operação mais confiável.
+
+**Notas - Redes básico**
+
+CIDR Block (10.0.0.0/16)
+- Usado para criar subredes.
+- Um endereço IP utiliza 4 números (0 a 255), ou seja, 8 bits para representar cada número.
+- O que vem depois da / define a quantidade de bits que vão ser utilizados na subrede.
+- Quanto maior esse número mais subredes eu posso ter, mas menos IPs vou ter.
+
 ---
 ### 2 - Google Cloud Computing Services
 
