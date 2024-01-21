@@ -192,7 +192,7 @@ Exemplos:
 
 **Notas: Endereço IP estático externo**
 
--IP estático externo:
+- IP estático externo:
 - Refere-se a um endereço IP (IPV4) que não muda, independentemente de reinicilizações ou desconexões.
 - Fixo e permanente para o recurso ou dispositivo ao qual foi atribuído.
 - Usado para situações que é necessário comunicação com a Internet ou recursos que estão em outra VPC Network, se as políticas de Firewall ou políticas permitirem a conexão, origens de fora de uma VPC conseguem acessar esse recurso.
@@ -212,12 +212,17 @@ CIDR Block (10.0.0.0/16)
 
 ---
 ### 2 - Google Cloud Computing Services
+---
 
 ### 3 - Projetos, Service Accounts e Billings
 
 **Projetos**
-- Cada recurso do GCP está organizado em projetos (billings, storages, network e etc).
+- Os recursos (billings, storages, network e etc) do GCP são organizados por projetos.
+- Uma coleção de projetos pode estar vinculado a mesma organização.
 - Cada projeto tem um nome e um ID.
+
+**Billings**
+- Recursos para avaliar os preços: [Calculator para estimar preços](https://cloud.google.com/products/calculator?hl=en) e [Price list para verificar os preços](https://cloud.google.com/pricing/list)
 
 ### 4 - Introdução a Computação em Google Cloud
 
