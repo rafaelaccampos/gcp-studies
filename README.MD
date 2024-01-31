@@ -222,6 +222,9 @@ CIDR Block (10.0.0.0/16)
 - Cada projeto tem um nome e um ID.
 
 **Billings**
+- Billing ou conta de pagamento é a quantidade de dinheiro **budget** que é alocado para um projeto.
+- É possível criar alertas para cada quantia ou percentual de dinheiro que é gasta. Ex: Quando atingir 10 reais ou 10 por cento, eu quero ser notificado por e-mail.
+- É possível ter vários billings para o mesmo projeto.
 - Recursos para avaliar os preços: [Calculator para estimar preços](https://cloud.google.com/products/calculator?hl=en) e [Price list para verificar os preços](https://cloud.google.com/pricing/list)
 
 ### 4 - Introdução a Computação em Google Cloud
@@ -234,6 +237,7 @@ CIDR Block (10.0.0.0/16)
  - Os data centers estão distribuídos em **regiões**.
  - Os data centers estão localizados na Ásia, Europa, Austrália, Américas, Oceania e entre outros e em cada uma dessas regiões tem divisões que são chamadas **zonas**.
  - Cada zona tem um nome e é independente de outra zona para permitir redundância. Ex: **us-west1** é uma **região** da costa oeste dos Estados Unidos que tem três **zonas**: **us-west1-a**, **us-west1-b** e **us-west1-c**.
+ - Cada região tem pelo menos duas zonas.
  - Alguns recursos somente podem ser visto pela zona em que ele reside, como por exemplo, instâncias de máquinas virtuais (virtual machine instances) e disco rígido zonais (zonal disk persistent), ou seja, só podem ser usados por recursos dessa mesma zona.
  - Alguns recursos são regionais, como por exemplo, um endereço de IP externo (external IP Address), pode ser usado por qualquer outro recurso naquela região independente da zona.
  - Ex: Se você quiser anexar um disco rígido (disk persistent) a uma máquina virtual (instance), ambos devem estar na mesma zona. Assim como, se você quiser endereçar um endereço de IP estático externo (external static IP Address) para uma instância (virtual machine), a instância deve estar na mesma região do endereço de IP (external IP Address).
