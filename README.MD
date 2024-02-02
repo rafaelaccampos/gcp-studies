@@ -231,6 +231,12 @@ CIDR Block (10.0.0.0/16)
 
 ### 5 - Computing com Compute Engine Virtual Machine 
 
+**Virtual Machines (VM)**
+- São instâncias virtuais (máquinas virtuais).
+- É possível utilizar imagens públicas do Linux/Windows/MacOs, que já são providas pelo Google.
+- Cada máquina virtual já vem com um disco pequeno que vem com o boot e instalação do Sistema Operacional.
+- Cada instância pertence a uma VPC.
+
  **Regiões**
  - O GCP consiste de recursos físicos e recursos virtuais.
  - Os recursos físicos ou virtuais estão disponíveis nos data centers do Google.
