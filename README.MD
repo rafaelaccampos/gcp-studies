@@ -150,6 +150,12 @@ Exemplos:
  - Múltiplas cópias de objects são armazenados para melhorar disponibilidade e durabilidade.
  - Em alguns casos, objects são salvos em diferentes regiões para garantir disponibilidade, quando uma região não estiver disponível.
  - É serveless, não é necessário uma VM para anexar storage para ele.
+ - Buckets tem um object lifecycle management que é quando os objetos vão expirar (ser removidos).
+ - Buckets tem três tipos de classes de armazenamento: Regional Cloud Storage Bucket, Standard Cloud Storage Bucket e Coldline Cloud Storage Bucket.
+ - Regional Cloud Storage Bucket é o armazenamento standard para objetos armazenados na mesma região.
+ - Standard Cloud Storage Bucket é o armazenamento padrão para dados que precisam ser acessados com frequência e/ou armazenados por breves períodos.
+ - Coldline Cloud Storage Bucket é o armazenamento altamente durável e de baixo custo para armazenar dados acessados com pouca frequência.
+ - Você consegue definir as permissões por Uniform ou Fine-grained. Uniform é quando você IAM (Identity and Access Management) para gerenciar as permissões para todos os objetos dentro do bucket ou objetos com o mesmo prefixo no nome. Enquanto, que o Fine-Grained também utiliza o IAM (Identity and Access Management) para as permissões, porém as permissões são definidas a nível de objeto.
 
  ![Cloud Storage](images/cloud-storage.png)
 
@@ -225,6 +231,8 @@ CIDR Block (10.0.0.0/16)
 - Billing ou conta de pagamento é a quantidade de dinheiro **budget** que é alocado para um projeto.
 - É possível criar alertas para cada quantia ou percentual de dinheiro que é gasta. Ex: Quando atingir 10 reais ou 10 por cento, eu quero ser notificado por e-mail.
 - É possível ter vários billings para o mesmo projeto.
+- Gerenciamento de custos e performance está vinculado a OLM (Object Lifecycle Management)
+- Object Lifecycle Managament é quanto tempo o dado vai ficar armazenado
 - Recursos para avaliar os preços: [Calculator para estimar preços](https://cloud.google.com/products/calculator?hl=en) e [Price list para verificar os preços](https://cloud.google.com/pricing/list)
 
 ### 4 - Introdução a Computação em Google Cloud
@@ -236,6 +244,9 @@ CIDR Block (10.0.0.0/16)
 - É possível utilizar imagens públicas do Linux/Windows/MacOs, que já são providas pelo Google.
 - Cada máquina virtual já vem com um disco pequeno que vem com o boot e instalação do Sistema Operacional.
 - Cada instância pertence a uma VPC.
+- É possível adicionar uma label (identificação a máquina) para as VMs.
+- Cada label é definido como chave e valor.
+- Você consegue se conectar as máquinas por meio de SSH.
 
  **Regiões**
  - O GCP consiste de recursos físicos e recursos virtuais.
