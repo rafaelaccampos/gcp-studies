@@ -249,6 +249,9 @@ CIDR Block (10.0.0.0/16)
 - É possível adicionar uma label (identificação a máquina) para as VMs.
 - Cada label é definido como chave e valor.
 - Você consegue se conectar as máquinas por meio de SSH.
+- Para lidar com instâncias de máquinas virtuais é possível usar duas abordagens: Management Instance Groups (MIGs) e Unmanaged instances.
+- MIGs são abstrações que permitem que você gerencie um grupo de instâncias idênticas. São criadas a partir de uma única configuração de instância e são automaticamente gerenciadas à criação, atualização, exclusão e escalabilidade.
+- Unmanaged instances são instâncias individuais que você precisa gerenciar manualmente. Embora, você tenha total controle da instância, isso significa que é necessário gerenciar escalabilidade, à criação, atualização, exclusão.
 
  **Regiões**
  - O GCP consiste de recursos físicos e recursos virtuais.
