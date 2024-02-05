@@ -156,6 +156,8 @@ Exemplos:
  - Standard Cloud Storage Bucket é o armazenamento padrão para dados que precisam ser acessados com frequência e/ou armazenados por breves períodos.
  - Coldline Cloud Storage Bucket é o armazenamento altamente durável e de baixo custo para armazenar dados acessados com pouca frequência.
  - Você consegue definir as permissões por Uniform ou Fine-grained. Uniform é quando você IAM (Identity and Access Management) para gerenciar as permissões para todos os objetos dentro do bucket ou objetos com o mesmo prefixo no nome. Enquanto, que o Fine-Grained também utiliza o IAM (Identity and Access Management) para as permissões, porém as permissões são definidas a nível de objeto.
+ - Para configurar escrita e leitura no bucket, você utiliza roles do IAM, como "roles/storage.objectCreator, storage.objectViewer e etc."
+ - Os buckets também podem ter política de retenção, que é a definição de quanto tempo o objeto vai permanecer no bucket.
 
  ![Cloud Storage](images/cloud-storage.png)
 
@@ -236,7 +238,7 @@ CIDR Block (10.0.0.0/16)
 - Recursos para avaliar os preços: [Calculator para estimar preços](https://cloud.google.com/products/calculator?hl=en) e [Price list para verificar os preços](https://cloud.google.com/pricing/list)
 
 ### 4 - Introdução a Computação em Google Cloud
-
+---
 ### 5 - Computing com Compute Engine Virtual Machine 
 
 **Virtual Machines (VM)**
@@ -258,6 +260,29 @@ CIDR Block (10.0.0.0/16)
  - Alguns recursos somente podem ser visto pela zona em que ele reside, como por exemplo, instâncias de máquinas virtuais (virtual machine instances) e disco rígido zonais (zonal disk persistent), ou seja, só podem ser usados por recursos dessa mesma zona.
  - Alguns recursos são regionais, como por exemplo, um endereço de IP externo (external IP Address), pode ser usado por qualquer outro recurso naquela região independente da zona.
  - Ex: Se você quiser anexar um disco rígido (disk persistent) a uma máquina virtual (instance), ambos devem estar na mesma zona. Assim como, se você quiser endereçar um endereço de IP estático externo (external static IP Address) para uma instância (virtual machine), a instância deve estar na mesma região do endereço de IP (external IP Address).
+
+ **Google Cloud SDK**
+ - É um conjunto de ferramentas do Google Cloud que permitem interação por meio da linha de comando.
+ - gcloud é para trabalhar com recursos, gsutil usado para lidar com buckets, bq para lidar com queries.
+ - gcloud init usado para inicializar a configuração Google Cloud SDK no seu ambiente local. O gcloud init realiza autenticação, configuração do projeto, configuração da conta, configuração da zona e região padrão e habilitação de apis.
+ - gcloud config set project nome-projeto é o comando para definir o projeto como default.
+ - gcloud projects list lista todos os projetos associados a sua conta.
+ - gcloud service list lista todos os serviços, com a flag --enable lista só os services habilitados.
+ - gcloud config list mostra a conta e o projeto que está sendo usado nesse momento.
+ - gsutil ls lista todos os buckets existentes.
+ - gsutil mb -l SOUTHAMERICA-EAST1 gs://nome-bucket cria um bucket na região especificada.
+ - gsutil cp ~/Downloads/t* gs://nome-teste copia o conteúdo do arquivo teste.txt para o bucket.
+ - Com o gsutil é possível criar o versionamento dos objetos dentro do bucket.
+ - gsutil versioning set on gs://nome-bucket habilita o versionamento do bucket. Quando é criado o versionamento, no bucket vai constar dois arquivos, o que foi enviado e o outro do versionamento daquele objeto.
+ - gsutil rm -r gs://nome-projeto-gsutil/ apaga o conteúdo do bucket de maneira recursiva.
+ - gcloud compute instances list lista todas as instâncias criadas.
+ - gcloud compute instances create nome-maquina-virtual cria uma máquina virtual.
+ - gcloud compute instances delete nome-maquina-virtual exclui uma máquina virtual.
+ - gcloud compute machine-types list lista todos os tipos de máquinas virtuais.
+ - gcloud compute machine-types list --fiilter="NAME:f1-micro" lista todas as máquinas virtuais da família f1-micro.
+ - gcloud compute machine-types list --fiilter="NAME:f1micro" | grep central lista todas as máquinas virtuais da família f1-micro.
+ - gcloud config set compute/zone us-east1 define para as máquinas virtuais uma região padrão de criação.
+ - gcloud compute ssh maquina-destino (pesquisar depois mais a fundo)
 ---
 
 ### 6 - Gerenciando Virtual Machines
