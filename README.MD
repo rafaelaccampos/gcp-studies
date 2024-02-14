@@ -306,6 +306,10 @@ CIDR Block (10.0.0.0/16)
 ### 13 - Carregando datas no Storage
 
 ### 14 - Network na Cloud: Virtual Private Clouds e Virtual Private Networks
+- Network Service Tiers é a qualidade do serviço relacionado à rede que o Google oferece. Tem duas vertentes Premium e Standard.
+- O serviço Premium é mais caro por oferecer baixa latência.
+- O serviço Standard tem o melhor custo.
+- A principal diferença entre o Premium e o Standard é o backbone.
 
 ### 15 - Network na Cloud: DNS, Load Balancing, Google Private Access e IP Addressing
 
