@@ -332,3 +332,4 @@ CIDR Block (10.0.0.0/16)
 - [Livro oficial do Google](https://www.google.com.br/books/edition/Google_Cloud_Certified_Associate_Cloud_E/YcirEAAAQBAJ?hl=pt-BR&gbpv=1&dq=Official+Google+Cloud+Certified+Associate+Cloud+Engineer&printsec=frontcover)
 - [ExamsTopics](https://www.examtopics.com/exams/google/associate-cloud-engineer/?source=post_page-----4af23a742b49--------------------------------)
 - [Udemy](https://www.udemy.com/course/google-cloud-certification-associate-cloud-engineer/)
+
