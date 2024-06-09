@@ -129,7 +129,7 @@ Exemplos:
 - Fornece escalabilidade automática com base na demanda.
 - É usado quando todas as funcionalidades do Kubernetes não são necessárias.
 
-![Cloud run price](images/cloud-run-price.png)
+![Cloud run price](images/cloud-run-price-actual.png)
 
  #### 2. Storage
 - Provedores de nuvem oferecem alguns tipos de serviço de armazenamento que são úteis para diversos requisitos da aplicações.
