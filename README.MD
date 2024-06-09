@@ -128,6 +128,7 @@ Exemplos:
 - Criação de containers usando qualquer linguagem de programação e execução como serviços serveless.
 - Fornece escalabilidade automática com base na demanda.
 - É usado quando todas as funcionalidades do Kubernetes não são necessárias.
+- Conexão direta VPC Egress sem uma VPC network e sem VPC Access Connector.
 
 ![Cloud run price](images/cloud-run-price-actual.png)
 
