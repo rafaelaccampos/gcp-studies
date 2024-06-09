@@ -129,6 +129,7 @@ Exemplos:
 - Fornece escalabilidade automática com base na demanda.
 - É usado quando todas as funcionalidades do Kubernetes não são necessárias.
 - Conexão direta VPC Egress sem uma VPC network e sem VPC Access Connector.
+- Possui gerenciamento de tráfico, ou seja, permite que um usuário veja a revisão 1 e outro veja a revisão 2 (diferentes versões da aplicação).
 
 ![Cloud run price](images/cloud-run-price-actual.png)
 
