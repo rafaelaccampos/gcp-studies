@@ -120,6 +120,7 @@ Exemplos:
 - Fornece ambiente de desenvolvimento e hospedagem de aplicações diretamente, com bases nas linguagens suportadas por ele.
 - Fornece escalabilidade automática com base na demanda da aplicação.
 - Pode ser configurado para executar aplicações em ambientes padrão ou flexível.
+- 
 
 ![App Engine](images/appengine.jpg)
 
@@ -241,7 +242,8 @@ CIDR Block (10.0.0.0/16)
 
 ### 4 - Introdução a Computação em Google Cloud
 ---
-### 5 - Computing com Compute Engine Virtual Machine 
+### 5 - Computing com Compute Engine Virtual Machine
+- Os produtos IaaS do GCP são chamados de Compute Engine 
 
 **Virtual Machines (VM)**
 - São instâncias virtuais (máquinas virtuais).
