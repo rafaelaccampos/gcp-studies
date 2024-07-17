@@ -42,16 +42,27 @@ Exemplos:
 ![Iaas, Paas, Saas](images/iaas-paas-saas.png)
 
 
-**Modelos de implantação**
+**Modelos de implantação ou Cloud deployment models**
 
 **Nuvem pública** 
-- Recursos são disponibilizados ao público geral e operados por provedores de servidores de nuvem.
+- Recursos são disponibilizados ao público geral (Internet) e operados por provedores de servidores de nuvem (GCP, AWS, Azure).
+
+**Multi-Cloud**
+- São várias nuvens públicas utilizadas no mesmo ambiente. Ex: AWS para hospedar aplicações, GCP para análise de dados e Azure para armazenar dados sensíveis
+- Uma boa utilização de multi-cloud é para recuperação de desastres, pois sua arquitetura será replicada por meio de várias nuvens públicas.
+- Uma outra utilização é evitar "vendor-lock-in" que é ficar preso a uma infraestrutura de um fornecedor específico de uma cloud.
+- O ponto negativo é que você não consegue usar completamente os recursos de uma cloud, pois ao replicar a mesma arquitetura você precisa fazer da mesma forma, muitas vezes sem poder aproveitar completamente os diferenciais de cada cloud para aquele recurso.
 
 **Nuvem privada**
-- Infraestrutura de nuvem é exclusivamente por uma única organização.
+- Infraestrutura de nuvem é exclusivamente por uma única organização e que existe on-premise e sem acesso público.
+- GCP tem o Anthos, AWS tem o AWS Outposts e o Azure tem o Azure Stack.
+- **VmWare tem características parecidas com cloud, mas não é considera uma nuvem privada**.
 
 **Nuvem hibrída**
 - Combina nuvens públicas e privadas, permitindo a transferência de dados e aplicações entre elas.
+- Geralmente usada para ajudar em casos de compliance, redução de riscos.
+- On-premises conectadas a public cloud não é considerada nuvem hibrída, isso é ambiente hibrído ou rede hibrída.
+- Nuvens híbridas permitem que você tenha a mesma interface e o mesmo "tooling" do que está disponível na nuvem pública.
 
 **Vantagens**
 - Escalabilidade
