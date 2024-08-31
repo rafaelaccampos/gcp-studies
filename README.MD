@@ -18,6 +18,8 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 **Infraestrutura como Serviço (IaaS)** 
 - Fornece acesso a recursos computacionais, como servidores virtuais, armazenamento e redes. Os usuários gerenciam os sistemas operacionais e as aplicações, enquanto o provedor de nuvem é responsável pela infraestrutura física.
+- Vende computação bruta, armazenamento e rede.
+- Pague pelo que foi alocado.
 
 **Exemplos**:
 - AWS: Amazon EC2 (Simple Storage Service) para computação virtualizada, Amazon S3 (Simple Storage Service) para armazenamento de objetos, Amazon VPC (Virtual Private Cloud) para redes isoladas e Amazon RDS (Relational Database Service) para banco de dados relacionais.
@@ -26,7 +28,10 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 
 **Plataforma como Serviço (PaaS)**
 - Oferece uma plataforma completa de desenvolvimento e implantação de aplicações. Os desenvolvedores podem criar, executar e gerenciar aplicações sem se preocupar com a infraestrutura subjacente.
-Exemplos:
+- Fornece e gerencia todos os recursos de hardware e softwate pela nuvem.
+- Pague pelo que foi usado.
+
+**Exemplos**:
 - Heroku: É uma plataforma de nuvem que permite aos desenvolvedores construir, executar e escalar padrões de forma rápida e fácil, sem se preocupar com a infraestrutura subjacente.
 - Google App Engine - É uma plataforma PaaS que permite aos desenvolvedores criar e hospedar aplicações web e móveis de forma escalável gerenciada pelo Google.
 - Microsoft Azure Services: Azure App Services é um serviço de PaaS da Microsoft que permite aos desenvolvedores construir, implantar e escalar aplicações WEB, móveis e API de forma rápida e eficente.
@@ -82,6 +87,7 @@ Exemplos:
 
 **O que é?**
  - O Google Cloud Platform (GCP) é uma suíte de serviços de computação em nuvem oferecidos pelo Google.
+- O Google já nasceu na arquitetura de contêineres (3 onda da computação em nuvem).
 
 **Tipos de serviços de computação em nuvem**
 
