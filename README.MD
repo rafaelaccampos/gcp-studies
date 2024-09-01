@@ -101,6 +101,8 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 - É possível criar múltiplas VMs, e com o load balancer é possível ter um único ponto de acesso para um back-end distribuído.
 - Se uma VM em um cluster falhar, o workload pode ser direcionado para outra VM no cluster.
 - Autoscalers podem adicionar ou remover VMs do cluster baseado nos workloads (autoscaling), isso ajuda a reduzir custos e garantir que existe capacidade computacional disponível quando o workload aumentar.
+- Paga somente o que é alocado.
+- Não é possível criar uma VM se um VPC (rede).
 
 **Managed Kubernetes Clusters (GKE)**
 - São ambientes Kubernetes totalmente gerenciados pelo GCP.
@@ -137,7 +139,7 @@ Esse repositório tem o objetivo de armazenar os estudos sobre Google Cloud Plat
 - Fornece ambiente de desenvolvimento e hospedagem de aplicações diretamente, com bases nas linguagens suportadas por ele.
 - Fornece escalabilidade automática com base na demanda da aplicação.
 - Pode ser configurado para executar aplicações em ambientes padrão ou flexível.
-- 
+- AppEngine é geralmente uso para hospedar o código da aplicação (sem estar containerizada).
 
 ![App Engine](images/appengine.jpg)
 
@@ -238,6 +240,16 @@ CIDR Block (10.0.0.0/16)
 - O que vem depois da / define a quantidade de bits que vão ser utilizados na subrede.
 - Quanto maior esse número mais subredes eu posso ter, mas menos IPs vou ter.
 
+**VPCs**
+- Nuvem privada virtual
+- É uma forma de configurar uma rede em cima da infraestrutura de rede física
+- É um recurso global (dentro do mesmo projeto a VPC já é global)
+- Em cada região tem subnets
+- Subrede é um recurso regional
+- Subredes conectam recursos em zonas diferentes
+- Possível aplicar regras de firewall
+- Rede é pré requisito para provisionar as máquinas virtuais
+- Auto ⇒ significa que automaticamente será provisionado rede para cada região (com início 10.—)
 ---
 ### 2 - Google Cloud Computing Services
 ---
