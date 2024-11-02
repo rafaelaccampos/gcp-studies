@@ -3,7 +3,8 @@
 
 - Escale automaticamente para lidar com o aumento temporário no tráfego.
 - Tenha alta disponibilidade para garantir que os visitantes sempre consigam acessar o conteúdo.
-- Explicação do cenário
+
+**Explicação do cenário**
 Nesse cenário, o objetivo é configurar uma infraestrutura que:
 
 - Escale horizontalmente: O uso de um grupo gerenciado de instâncias permite que o sistema ajuste automaticamente o número de instâncias Nginx com base na demanda.
