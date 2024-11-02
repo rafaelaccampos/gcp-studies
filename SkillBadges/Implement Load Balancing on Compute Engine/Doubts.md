@@ -25,3 +25,21 @@
 - Porque as regras de firewall são configuradas em termos de portas e protocolos de transporte (como TCP e UDP) e não diretamente por protocolos de aplicação, como HTTP ou HTTPS
 - O tráfego HTTP (na porta 80) e HTTPS (na porta 443) usa TCP como protocolo de transporte. Portanto, ao permitir TCP na porta 80, estamos permitindo, na prática, que tráfego HTTP passe por essa porta
 - Em resumo, o firewall trabalha numa camada de rede mais baixa, onde ele lida com transporte de pacotes (TCP/UDP) e não analisa conteúdo de pacotes para verificar o protocolo de aplicação, como HTTP ou HTTPS
+
+**O que é por que usar o URL Map?**
+- O URL map define como as requisições HTTP ou HTTPS devem ser roteadas para diferentes serviços de back-end com base no URL da solicitação ou em outros critérios, como cabeçalhos e parâmetros
+- Nesse caso, ele encaminha todo o tráfego recebido diretamente para o serviço de back-end
+- O uso de um URL map permite que você, no futuro, defina regras mais complexas, como direcionamento baseado em prefixos de URL (/api, /admin, etc.) ou condições específicas. Isso ajuda a escalar a aplicação sem precisar reconfigurar o balanceador de carga completamente
+- Ao separar o roteamento e o balanceamento, o URL map permite que as regras de roteamento sejam mantidas separadas das configurações de infraestrutura. Isso torna a infraestrutura mais flexível e facilita ajustes futuros.
+
+**O que é por que usar o Proxy HTTP?**
+- O proxy HTTP atua como intermediário entre o balanceador de carga e o serviço de back-end, fazendo a conexão entre o tráfego de entrada e as regras definidas no URL map.
+- Ele intercepta as requisições HTTP e as redireciona de acordo com as configurações do URL map associado. Dessa forma, o proxy sabe qual serviço de back-end deve processar cada solicitação com base nas regras definidas
+
+**O que é uma porta nomeada e por que usar?**
+- O balanceador de carga precisa saber qual porta utilizar para rotear o tráfego HTTP para as instâncias. o definir uma porta nomeada (http:80), o balanceador de carga entende que qualquer requisição HTTP deve ser direcionada para a porta 80 nas instâncias do grupo
+- Definir uma porta nomeada (http) torna a configuração mais consistente e fácil de entender, especialmente se outras portas forem adicionadas no futuro
+
+**O que é a regra de firewall com ingress e por que ela é necessária?**
+- Permite que requisições HTTP externas (fora da rede VPC) sejam encaminhadas para as instâncias do grupo
+- Sem essa regra, o tráfego HTTP da internet seria bloqueado pelo firewall, impedindo que o balanceador de carga se comunique com as instâncias na porta 80. Essa regra é essencial para que as instâncias possam receber requisições HTTP provenientes de usuários externos.
