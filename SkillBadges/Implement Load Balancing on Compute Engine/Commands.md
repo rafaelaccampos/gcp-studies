@@ -83,3 +83,5 @@ gcloud compute firewall-rules create allow-http-from-internet \
     --direction=INGRESS \
     --action=ALLOW \
     --rules=tcp:80
+
+ ![Implementing Load Balancing](images/implementing-load-balacing.png)
