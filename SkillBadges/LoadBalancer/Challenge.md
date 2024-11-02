@@ -11,8 +11,6 @@ Nesse cenário, o objetivo é configurar uma infraestrutura que:
 - Distribua a carga: Um balanceador de carga distribui o tráfego entre várias instâncias para garantir que o sistema responda rapidamente, mesmo com um número alto de acessos.
 - Tenha alta resiliência: A criação de instâncias em uma zona específica e o uso de verificações de integridade permitem que o sistema identifique instâncias com problemas e distribua o tráfego para outras saudáveis.
 - Garanta fácil configuração e reutilização: Usar um template de instância facilita a replicação e a criação de novas VMs idênticas sempre que necessário.
-- Como os comandos atendem ao caso de uso
-- Aqui está como cada comando ajuda a criar essa infraestrutura para um website institucional ou landing page:
 
 **Configuração da Instância de Salto (Jump Host):**
 
@@ -40,7 +38,7 @@ Outra regra de firewall allow-http-from-internet garante que o tráfego HTTP (po
 - Finalmente, a regra de encaminhamento (nucleus-http-rule) direciona o tráfego da internet para o balanceador de carga na porta 80.
 
 **Resumo**
-- Esses comandos configuram uma infraestrutura ideal para um website institucional ou landing page, garantindo:
+Esses comandos configuram uma infraestrutura ideal para um website institucional ou landing page, garantindo:
 
 - Alta disponibilidade e escalabilidade automática para lidar com picos de tráfego.
 - Facilidade de gestão através de um jumphost seguro.
