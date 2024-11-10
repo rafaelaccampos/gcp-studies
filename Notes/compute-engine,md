@@ -1,0 +1,8 @@
+**Compute Service Engine**
+- vms called instances
+- operation system, private/public images
+- google cloud marketplace has pre-configured images and software packages
+- manage multiple instace using intance groups
+- add/remove capacity using autosacling with instance group
+- can be used with gcp
+- use ssh to connect
